@@ -12,7 +12,6 @@
 #     shield: reviung41
 #
 ---
-name: Main-Build
 include:
   - board: nice_nano_v2
     shield: chalice
