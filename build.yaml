@@ -14,7 +14,7 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: chalice nice_view
+    shield: chalice
 include:
   - board: nice_nano_v2
-    shield: chalice nice_view
+    shield: chalice
