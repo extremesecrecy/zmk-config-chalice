@@ -31,7 +31,8 @@
                 <&kp HOME>,
                 <&macro_tap>,
                 <&kp LEFT>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp HOME>;
         };
     };
 
