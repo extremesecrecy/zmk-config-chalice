@@ -20,8 +20,6 @@
             layers = <0>;
         };
     };
-    
-    
 
     macros {
         test: test {
@@ -64,6 +62,16 @@
      &trans  &bt BT_SEL 0  &rgb_ug RGB_EFF  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans  &trans  &trans  &trans  &trans  &trans   &trans    &trans     &trans
              &bt BT_SEL 1  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans  &trans  &trans  &trans  &trans  &trans   &trans    &trans     &trans  &kp PG_UP
              &bt BT_SEL 2                            &trans           &trans           &to 0          &trans          &trans   &trans  &kp HOME  &kp PG_DN    &kp END
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans          &trans  &trans          &trans          &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
