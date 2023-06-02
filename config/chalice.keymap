@@ -13,12 +13,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        snap {
-            bindings = <&trans>;
-            key-positions = <>;
-            layers = <0>;
-        };
     };
 
     macros {
