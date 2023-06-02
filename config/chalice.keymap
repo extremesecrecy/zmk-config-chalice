@@ -40,6 +40,18 @@
                 <&macro_release>,
                 <&kp LEFT_SHIFT>;
         };
+        snipping: snipping {
+            compatible = "zmk,behavior-macro";
+            label = "SNIPPING";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LEFT_WIN &kp LEFT_SHIFT>;
+        };
     };
 
     keymap {
@@ -57,11 +69,11 @@
 
         FKeyAndHotKeys {
             bindings = <
- &to 2  &trans           &kp F1         &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &kp F11                 &kp F12                &trans
-&trans  &trans           &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans       &trans                  &trans                &trans
-&trans  &trans           &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans       &trans                  &trans
-        &trans  &kp LC(LA(DEL))  &kp LG(LS(S))  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans       &trans                  &trans  &kp LS(LA(UP_ARROW))
-        &trans                          &trans  &trans           &to 0          &trans          &trans   &trans  &shift_home  &kp LS(LA(DOWN_ARROW))            &shift_end
+ &to 2  &trans           &kp F1         &kp F2  &kp F3  &kp F4     &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &kp F11                 &kp F12                &trans
+&trans  &trans           &trans         &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans   &trans       &trans                  &trans                &trans
+&trans  &trans           &trans         &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans   &trans       &trans                  &trans
+        &trans  &kp LC(LA(DEL))  &kp LG(LS(S))  &trans  &trans  &snipping  &trans  &trans  &trans  &trans   &trans       &trans                  &trans  &kp LS(LA(UP_ARROW))
+        &trans                          &trans  &trans              &to 0          &trans          &trans   &trans  &shift_home  &kp LS(LA(DOWN_ARROW))            &shift_end
             >;
         };
 
