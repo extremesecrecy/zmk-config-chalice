@@ -22,13 +22,16 @@
     };
 
     macros {
-        test: test {
+        Home_Left: Home_Left {
             compatible = "zmk,behavior-macro";
-            label = "TEST";
+            label = "HOME_LEFT";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
+                <&kp HOME>,
                 <&macro_tap>,
-                <&kp A &kp B &kp C>;
+                <&kp LEFT>,
+                <&macro_release>;
         };
     };
 
