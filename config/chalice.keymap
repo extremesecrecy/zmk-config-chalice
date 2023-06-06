@@ -60,11 +60,11 @@
                 <&macro_press>,
                 <&kp LEFT_SHIFT &kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp LEFT_ARROW>,
+                <&kp UP>,
                 <&macro_release>,
                 <&kp LEFT_SHIFT &kp LEFT_ALT>;
         };
-                shift_alt_down: shift_alt_down {
+        shift_alt_down: shift_alt_down {
             compatible = "zmk,behavior-macro";
             label = "SHIFT_ALT_DOWN";
             #binding-cells = <0>;
@@ -72,11 +72,11 @@
                 <&macro_press>,
                 <&kp LEFT_SHIFT &kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp LEFT_ARROW>,
+                <&kp DOWN>,
                 <&macro_release>,
                 <&kp LEFT_SHIFT &kp LEFT_ALT>;
         };
-                shift_alt_left: shift_alt_left {
+        shift_alt_left: shift_alt_left {
             compatible = "zmk,behavior-macro";
             label = "SHIFT_ALT_LEFT";
             #binding-cells = <0>;
@@ -84,11 +84,11 @@
                 <&macro_press>,
                 <&kp LEFT_SHIFT &kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp LEFT_ARROW>,
+                <&kp LEFT>,
                 <&macro_release>,
                 <&kp LEFT_SHIFT &kp LEFT_ALT>;
         };
-                shift_alt_right: shift_alt_right {
+        shift_alt_right: shift_alt_right {
             compatible = "zmk,behavior-macro";
             label = "SHIFT_ALT_RIGHT";
             #binding-cells = <0>;
@@ -96,12 +96,10 @@
                 <&macro_press>,
                 <&kp LEFT_SHIFT &kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp LEFT_ARROW>,
+                <&kp RIGHT>,
                 <&macro_release>,
                 <&kp LEFT_SHIFT &kp LEFT_ALT>;
         };
-        
-        
     };
 
     keymap {
